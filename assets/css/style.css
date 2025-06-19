@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+/* Basic Css */
+body{
+    @apply text-white;
+    background-color: var(--bg-color);
+    /* color: var(--secondary-color);
+    font-family: var(--font-rubik); */
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6{
+    @apply font-raleway;
+}
+p{
+    @apply font-rubik;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 90rem; /* 1440px */
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+@theme{
+    --primary-color: #ff014f;
+    --secondary-color: #e9e9e9;
+    --border-color: #1d1c1c;
+    --gray-color: #9f9f9f;
+    --bg-color: #090808;
+    --gray-bg: #242424;
+    --gray-bg2: #101010;
+    --color-bg: #ff014f;
+    --font-raleway:"Raleway", sans-serif;
+    --font-rubik:"Rubik","sans-serif";
+}
+
+
+/* --------------------  header css  -------------------- */
+
+.animatedText {
+  border-right: 2px solid #fff;
+  display: flex;
+  align-items: center;
+}
+.stroke {
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: var(--primary-color);
+    -webkit-text-fill-color: transparent;
+}
+.hero{
+    background-image: url(../images/m.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+.hero::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #000;
+    opacity: .8;
+    z-index: 1;
+}
+
+
+/* --------------------  about css  -------------------- */
+.section-title h4 {
+    position: absolute;
+    font-weight: 700;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.section-title h3 {
+    --tw-text-opacity: 1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: rgba(23, 23, 23, 0.97);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* -------------- akill & education css --------------- */
+
+.speech-bubble{
+    display: none;
+}
+.speech-bubble:after {
+	border: 0.5em solid transparent;
+	content: "";
+	margin-left: -0.5em;
+	position: absolute;
+	bottom: -37%;
+	left: 50%;
+}
+.html {
+	left: calc(88.5% - 1.5em);
+}
+  
+.css{
+	  left: calc(78.5% - 1.5em);
+}
+
+.javascript{
+	left: calc(28.5% - 1.5em);
+} 
+
+.php{
+	left: calc(33.5% - 1.5em);
+}
+
+.jquery{
+	left: calc(68.5% - 1.5em);
+}
+
+.wordpress{
+	left: calc(48.5% - 1.5em);
+}
+
+.pixel{
+	left: calc(93.5% - 1.5em);
+}
+
+.photoshop{
+	left: calc(97.5% - 1.5em);
+}
+ 
+.html:after, .css:after, .javascript:after, .php:after, .jquery:after, .wordpress:after, .pixel:after, .photoshop:after {
+	border-top-color: var(--gray-bg);
+}
+
+
+/* -------------- education css --------------- */
+
+.tag::before {
+    background: var(--primary-color);
+    height: 18px;
+    width: 18px;
+    left: 0px;
+    position: absolute;
+    content: "";
+}
+.tag::after {
+    position: absolute;
+    content: "";
+    left: 18px;
+    border: 9px solid transparent;
+    border-left-color: var(--primary-color);
+}

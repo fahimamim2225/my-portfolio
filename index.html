@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <title>Mim.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./assets/css/output.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- header area start -->
+    <header class="py-[0.9375rem] px-[1.875rem] 2xl:px-[0rem] bg-black border-b border-[var(--border-color)] sticky top-0 z-50" data-aos="fade-down">
+        <div class="container">
+            <div class="flex justify-between items-center max-w-[90rem] mx-auto">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                </div>
+
+                <!-- navigation -->
+                <nav class="header-menu hidden md:flex">
+                    <ul class="flex justify-between items-center gap-[1.875rem] leading-[130%] capitalize">
+                        <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="index.html">home</a></li>
+                        <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#about">about</a></li>
+                        <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#portfolio">portfolio</a></li>
+                        <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#services">services</a></li>
+                        <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger Menu -->
+                <div class="relative md:hidden">
+
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+                    <label for="menu-toggle" class="cursor-pointer z-20 relative">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <!-- Mobile Sliding Menu -->
+                    <nav class="fixed top-[6.25rem] right-0 w-[100%] h-screen bg-[var(--bg-color)] z-20 pt-[1.875rem] translate-x-full peer-checked:translate-x-0 duration-300 ease-in-out">
+                        <ul class="flex flex-col justify-between items-center gap-6 p-6 leading-[130%] capitalize">
+                            <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#">about</a></li>
+                            <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#">portfolio</a></li>
+                            <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#">services</a></li>
+                            <li><a class="font-bold text-lg text-white hover:text-[var(--primary-color)]" href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- hero area start -->
+    <section class="hero h-[37.5rem] md:h-[50rem] px-[1.875rem] 2xl:px-[0rem] relative">
+        <div class="absolute top-[6.25rem] left-[25rem] w-[6.25rem] h-[6.25rem] bg-white/35 rounded-[0.3125rem] rotate-45 z-0" data-aos="zoom-out-right" data-aos-delay="300"></div>
+        <div class="absolute top-[25rem] left-[31.25rem] w-[5rem] h-[5rem] bg-transparent border-4 border-white/50 rounded-[0.3125rem] rotate-65 z-0" data-aos="zoom-out-right" data-aos-delay="900"></div>
+        <div class="absolute top-[9.375rem] right-[21.875rem] w-[7.5rem] h-[7.5rem] bg-transparent border-4 border-white/55 rounded-[0.3125rem] rotate-55 z-0" data-aos="zoom-out-left" data-aos-delay="600"></div>
+        <div class="absolute bottom-[9.375rem] right-[34.375rem] w-[3.75rem] h-[3.75rem] bg-white/70 rounded-[0.3125rem] rotate-60" data-aos="zoom-out-left z-0" data-aos-delay="1200"></div>
+        
+        <div class="container">
+            <div class="flex flex-col-reverse xl:flex-row justify-start items-center gap-[0px] xl:gap-[25rem]">
+                <div class="flex flex-row xl:flex-col items-center gap-4 z-10" data-aos="flip-left" data-aos-delay="1200">
+                    <a href="https://www.facebook.com/fahima.mim.21" target="_blank" class="bg-[var(--gray-bg)] hover:bg-[var(--primary-color)] transition w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/fahimamim2225" target="_blank" class="bg-[var(--gray-bg)] hover:bg-[var(--primary-color)] transition w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fahima-mim-a18b45255/" target="_blank" class="bg-[var(--gray-bg)] hover:bg-[var(--primary-color)] transition w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/dream_mim21/" target="_blank" class="bg-[var(--gray-bg)] hover:bg-[var(--primary-color)] transition w-[2.5rem] h-[2.5rem] rounded-full flex justify-center items-center"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+
+
+                <div class="flex flex-col justify-center items-center space-y-4 h-[31.25rem] xl:h-[43.75rem] relative z-10" data-aos="zoom-in-down">
+                    <span class="text-white font-bold text-lg leading-[1.6875rem] tracking-[0.25rem] uppercase">i am</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black stroke">Fahima Mim, a</h1>
+                    <h2 class="animatedText text-white text-2xl md:text-4xl font-bold capitalize h-[3.4375rem]"></h2>
+                    <a href="#_" class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group mt-[0.3125rem]">
+                        <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                        <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-50 -translate-x-60 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                        <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-[var(--primary-color)]">Download My CV</span>
+                        <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero area end -->
+
+    <!-- about area start -->
+    <section id="about" class="py-[5.625rem] lg:py-[7.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="w-full">
+                <div class="flex justify-center items-center mb-20">
+                    <div class="section-title uppercase relative" data-aos="zoom-in-down">
+                        <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold uppercase leading-[3.125rem] tracking-[1rem]">about me</h3>
+                        <h4 class="text-xl md:text-2xl xl:text-3xl uppercase tracking-[-0.125rem] font-extrabold">know me <span class="text-[var(--primary-color)]">more</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col xl:flex-row justify-between items-center gap-6">
+                <div class="w-full xl:w-8/12">
+                    <div class="border border-[var(--border-color)] rounded-lg p-[2.438rem] flex flex-col shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] space-y-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <span class="text-[var(--primary-color)] text-base font-semibold uppercase">Who am i?</span>
+                        <h3 class="text-[var(--secondary-color)] text-2xl font-bold leading-[1.875rem] border-b-3 border-[var(--primary-color)] w-[15rem] pb-[0.5rem]">I'm a Web Developer</h3>
+                        <p class="text-[var(--gray-color)] text-sm 2xl:text-lg font-normal leading-[1.875rem]">I am a web designer and developer with a passion for creating beautiful and functional websites. I have a strong background in HTML, CSS, JavaScript, and various web development frameworks. My goal is to deliver high-quality web solutions that meet the needs of my clients and enhance user experience. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.</p>
+                    </div>
+                </div>
+                <div class="w-full xl:w-4/12">
+                    <div class="border border-[var(--border-color)] shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] rounded-lg p-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <ul  class="flex flex-col space-y-3 text-[var(--gray-color)] text-sm font-normal">
+                            <li class="border-b border-[var(--border-color)] capitalize pb-3"><span class="text-[var(--secondary-color)] font-semibold">name:</span> fahima mim</li>
+                            <li class="border-b border-[var(--border-color)] capitalize pb-3"><span class="text-[var(--secondary-color)] font-semibold">Nationality:</span> bangladeshi</li>
+                            <li class="border-b border-[var(--border-color)] \capitalize pb-3"><span class="text-[var(--secondary-color)] font-semibold">address:</span> kaliakoir, gazipur</li>
+                            <li class="border-b border-[var(--border-color)] capitalize pb-3"><span class="text-[var(--secondary-color)] font-semibold">phone:</span> 01760355169</li>
+                            <li class="border-b border-[var(--border-color)] lowercase pb-3"><span class="text-[var(--secondary-color)] font-semibold capitalize">email:</span> mim39853@gmail.com</li>
+                            <li class="capitalize pb-3"><span class="text-[var(--secondary-color)] font-semibold">langages:</span> bangla, english, urdu, hindi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about area end -->
+
+    <!-- skill & education area start -->
+    <section class="pb-[5.625rem] lg:pb-[7.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="flex flex-col xl:flex-row justify-between items-center gap-[3.75rem]">
+                <div class="w-1/2">
+                    <div class="flex flex-col space-y-8 text-white font-bold w-full" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="flex justify-start items-center gap-8 text-[1.875rem]">
+                            <i class="fa-solid fa-suitcase text-[var(--primary-color)]"></i>
+                            <h3 class="text-[var(--secondary-color)] text-xl lg:text-3xl uppercase font-black">Skills</h3>
+                            <div class="bg-[var(--gray-bg)] w-full h-[0.0625rem]"></div>
+                        </div>
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">HTML5</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble html bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-0.7375rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">90%</div>
+                                <div class="progressBarValue ht bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">CSS</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble css bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.4875rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">80%</div>
+                                <div class="progressBarValue cs bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">JavaScript</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble javascript bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.55rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">30%</div>
+                                <div class="progressBarValue js bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>    
+                        </div>  
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">PHP</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble php bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.4875rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">35%</div>
+                                <div class="progressBarValue ph bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div> 
+                        </div> 
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">Jquery</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble jquery bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.425rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">70%</div>
+                                <div class="progressBarValue jq bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">Wordpress</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble wordpress bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.425rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">50%</div>
+                                <div class="progressBarValue wp bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                            
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">Pixel perfect Design</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble pixel bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.425rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">95%</div>
+                                <div class="progressBarValue pp bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                        <div class="progressBar relative">
+                            <h4 class="text-xs md:text-base mb-3">Photoshop</h4>
+                            <div class="progressBarcontainer bg-[var(--gray-color)] w-[100%] h-[0.3125rem] overflow-hidden rounded-[0.3125rem]">
+                                <div class="speech-bubble photoshop bg-[var(--gray-bg)] text-xs leading-[2rem] absolute top-[-1.425rem] md:top-[-0.3rem] text-center rounded-[0.3125rem]">98%</div>
+                                <div class="progressBarValue ps bg-[var(--primary-color)] h-[0.3125rem] rounded-[0.3125rem] float-left"></div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="w-1/2">
+                    <div class="flex flex-col space-y-8 text-white font-bold w-full mt-[20px] xl:mt-[0px]" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="flex justify-start items-center gap-8 text-[1.875rem]">
+                            <i class="fa-solid fa-ribbon text-[var(--primary-color)]"></i>
+                            <h3 class="text-[var(--secondary-color)] text-xl lg:text-3xl uppercase font-black">education</h3>
+                            <div class="bg-[var(--gray-bg)] w-full h-[0.0625rem]"></div>
+                        </div>  
+                        <div class="flex flex-col space-y-4">
+                            <div class="flex flex-col space-y-4 px-[3rem] py-[2rem] border-l-4 border-[var(--primary-color)] bg-[var(--gray-bg2)] relative">
+                                <h5 class=" tag bg-[#0c0b0b] shadow-[inset_1px_1px_22px_3px_rgba(0,_0,_0,_0.1)] py-[0.625rem] px-[1.25rem] rounded-[1.563rem] w-[9.375rem] md:w-[12.5rem] flex justify-center items-center text-xs md:text-sm font-bold text-[var(--gray-color)]">2021</h5>
+                                <h3 class=" uppercase font-black text-sm md:text-xl tracking-[0.031rem] text-[var(--secondary-color)]">web development course</h3>
+                                <p class=" text-[var(--gray-color)] capitalize text-xs md:text-sm mt-[-0.625rem]">serve human foundation bangladesh</p>
+                            </div>
+                            <div class="flex flex-col space-y-4 px-[3rem] py-[2rem] border-l-4 border-[var(--primary-color)] bg-[var(--gray-bg2)] relative">
+                                <h5 class=" tag bg-[#0c0b0b] shadow-[inset_1px_1px_22px_3px_rgba(0,_0,_0,_0.1)] py-[0.625rem] px-[1.25rem] rounded-[1.563rem] w-[9.375rem] md:w-[12.5rem] flex justify-center items-center text-xs md:text-sm font-bold text-[var(--gray-color)]">2017 - 2020</h5>
+                                <h3 class=" uppercase font-black text-sm md:text-xl tracking-[0.031rem] text-[var(--secondary-color)]">BBA in Accounting</h3>
+                                <p class=" text-[var(--gray-color)] capitalize text-xs md:text-sm mt-[-0.625rem]">National University</p>
+                            </div>
+                            <div class="flex flex-col space-y-4 px-[3rem] py-[2rem] border-l-4 border-[var(--primary-color)] bg-[var(--gray-bg2)] relative">
+                                <h5 class="tag bg-[#0c0b0b] shadow-[inset_1px_1px_22px_3px_rgba(0,_0,_0,_0.1)] py-[0.625rem] px-[1.25rem] rounded-[1.563rem] w-[9.375rem] md:w-[12.5rem] flex justify-center items-center text-xs md:text-sm font-bold text-[var(--gray-color)]">2020 - 2021</h5>
+                                <h3 class="uppercase font-black text-sm md:text-xl tracking-[0.031rem] text-[var(--secondary-color)]">MBA in Accounting</h3>
+                                <p class=" text-[var(--gray-color)] capitalize text-xs md:text-sm mt-[-0.625rem]">National University</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education & experience area end -->
+
+    <!-- portfolio area start -->
+    <section id="portfolio" class="py-[5.625rem] lg:py-[7.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="w-full">
+                <div class="flex justify-center items-center mb-20">
+                    <div class="section-title uppercase relative" data-aos="zoom-in-down">
+                        <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold uppercase leading-[3.125rem] tracking-[1rem]">works</h3>
+                        <h4 class="text-xl md:text-2xl xl:text-3xl uppercase tracking-[-0.125rem] font-extrabold">my <span class="text-[var(--primary-color)]">portfolio</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap sm:flex-wrap md:flex-wrap lg:flex-wrap xl:flex-wrap justify-center" data-aos="fade-right" data-aos-duration="1500">
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-1.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/rrf-practice/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 1 (HTML, tailwind CSS & fully responsive)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-2.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/rokomari-practice/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 2 (HTML, CSS & jquery)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-3.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/challenge3-8/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 3 (html, tailwind css & jquery)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-4.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/challenge-10/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 4 (html, tailwind css & jquery)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-5.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/lesson/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 5 (html, tailwind css & jquery)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <div class="portfolio-item relative w-full overflow-hidden group border-8 border-[var(--bg-color)]">
+                        <img src="assets/images/p-6.jpg" alt="" class="w-full h-full object-cover">
+                        <div class="portfolio-overlay absolute top-0 bottom-0 left-0 right-0 m-5 w-auto p-2 md:p-6 box-border bg-[var(--gray-bg)] flex justify-center items-center transform -translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-80 outline-6 outline-[var(--primary-color)] -outline-offset-14">
+                            <a href="https://fahimamim2225.github.io/dustri/" target="_blank" class="text-center space-y-2">
+                                <h4 class="text-[var(--secondary-color)] text-sm xl:text-xl font-bold">Practice 6 (HTML, CSS, Bootstrap & jquery)</h4>
+                                <p class="text-xs lg:text-sm">This template was used for practice only</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio area end -->
+
+    <!-- service area start -->
+    <section id="services" class="py-[5.625rem] lg:py-[7.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="w-full">
+                <div class="flex justify-center items-center mb-20">
+                    <div class="section-title uppercase relative" data-aos="zoom-in-down">
+                        <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold uppercase leading-[3.125rem] tracking-[1rem]">top notch</h3>
+                        <h4 class="text-xl md:text-2xl xl:text-3xl uppercase tracking-[-0.125rem] font-extrabold">my <span class="text-[var(--primary-color)]">services</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row justify-between items-center gap-4" data-aos="fade-left"  data-aos-duration="1500">
+                <div class="w-full sm:w-full md:w-full lg:w-1/3 xl:w-1/3 2xl:w-1/4">
+                    <div class="border border-[var(--border-color)] hover:shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] rounded-lg p-5 xl:p-10 flex flex-col space-y-6 hover:bg-[var(--gray-bg2)] transition-all duration-300">
+                        <i class="fa-brands fa-slack text-2xl xl:text-5xl"></i>
+                        <h3 class="text-[var(--secondary-color)] text-md xl:text-2xl font-bold leading-[1.875rem]">Web Design</h3>
+                        <div class="w-full h-[0.063rem] bg-[var(--border-color)]"></div>
+                        <ul class="text-[var(--gray-color)] text-xs 2xl:text-base font-normal leading-[1.875rem] space-y-1 capitalize">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                    Responsive design
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                PSD & logo design
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                photoshop & illustrator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full sm:w-full md:w-full lg:w-1/3 xl:w-1/3 2xl:w-1/4">
+                    <div class="border border-[var(--border-color)] hover:shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] rounded-lg p-5 xl:p-10 flex flex-col space-y-6 hover:bg-[var(--gray-bg2)] transition-all duration-300">
+                        <i class="fa-solid fa-code text-2xl xl:text-5xl"></i>
+                        <h3 class="text-[var(--secondary-color)] text-md xl:text-2xl font-bold leading-[1.875rem]">Web Development</h3>
+                        <div class="w-full h-[0.063rem] bg-[var(--border-color)]"></div>
+                        <ul class="text-[var(--gray-color)] text-xs 2xl:text-base font-normal leading-[1.875rem] space-y-1 capitalize">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                    HTML, CSS, JS Development.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                Tailwind & Bootstrap Layouts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                Pixel Perfect Design
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full sm:w-full md:w-full lg:w-1/3 xl:w-1/3 2xl:w-1/4">
+                    <div class="border border-[var(--border-color)] hover:shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] rounded-lg p-5 xl:p-10 flex flex-col space-y-6 hover:bg-[var(--gray-bg2)] transition-all duration-300">
+                        <i class="fa-brands fa-elementor text-2xl xl:text-5xl"></i>
+                        <h3 class="text-[var(--secondary-color)] text-md xl:text-2xl font-bold leading-[1.875rem]">Wordpress</h3>
+                        <div class="w-full h-[0.063rem] bg-[var(--border-color)]"></div>
+                        <ul class="text-[var(--gray-color)] text-xs 2xl:text-base font-normal leading-[1.875rem] space-y-1 capitalize">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                    WordPress Development
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                Elementor Custom Design
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                CMS Maintenance & Bug Fixing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full sm:w-full md:w-full lg:w-1/3 xl:w-1/3 2xl:w-1/4">
+                    <div class="border border-[var(--border-color)] hover:shadow-[0px_0px_12px_2px_rgba(255,_255,_255,_0.05)] rounded-lg p-5 xl:p-10 flex flex-col space-y-6 hover:bg-[var(--gray-bg2)] transition-all duration-300">
+                        <i class="fa-solid fa-laptop-code text-2xl xl:text-5xl"></i>
+                        <h3 class="text-[var(--secondary-color)] text-md xl:text-2xl font-bold leading-[1.875rem]">Fully Responsive</h3>
+                        <div class="w-full h-[0.063rem] bg-[var(--border-color)]"></div>
+                        <ul class="text-[var(--gray-color)] text-xs 2xl:text-base font-normal leading-[1.875rem] space-y-1 capitalize">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                    Optimized for All Devices
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                Auto-Adjusting Layouts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm6-2.438c0-.724.588-1.312 1.313-1.312h4.874c.725 0 1.313.588 1.313 1.313v4.874c0 .725-.588 1.313-1.313 1.313H9.564a1.312 1.312 0 0 1-1.313-1.313V9.564Z" clip-rule="evenodd" />
+                                </svg>
+                                Cross-Browser Compatibility
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service area end -->
+
+    <!-- contact area start -->
+    <section id="contact" class="py-[5.625rem] lg:py-[7.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="w-full">
+                <div class="flex justify-center items-center mb-20">
+                    <div class="section-title uppercase relative" data-aos="zoom-in-down">
+                        <h3 class="text-2xl md:text-5xl xl:text-6xl font-bold uppercase leading-[3.125rem] tracking-[1rem]">Get In Touch</h3>
+                        <h4 class="text-xl md:text-2xl xl:text-3xl uppercase tracking-[-0.125rem] font-extrabold">contact <span class="text-[var(--primary-color)]">me</span></h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col lg:flex-row justify-between items-center bg-[var(--gray-bg2)] rounded-[0.625rem] p-8 lg:p-20 gap-16 lg:gap-8" data-aos="zoom-in-down"  data-aos-duration="1500">
+                <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
+                    <div class="flex flex-col space-y-3">
+                        <h3 class="text-[var(--primary-color)] text-sm font-bold leading-[1.875rem] uppercase">get in touch</h3>
+                        <h3 class="text-[var(--secondary-color)] text-3xl lg:text-5xl font-bold leading-[2.5rem] lg:leading-[3.75rem] mb-4">Elevate your brand <br> with Me</h3>
+                        <p class="text-[var(--gray-color)] text-sm lg:text-lg font-normal w-full leading-[1.875rem]">Feel free to reach out to me for any inquiries or collaborations. I am always open to new opportunities and would love to hear from you.</p>
+                        <div class="flex flex-col space-y-4 mt-8">
+                            <span class="uppercase font-bold">follow me:</span>
+                            <div class="flex items-center gap-4">
+                                <a href="https://www.facebook.com/fahima.mim.21" target="_blank" class="w-[3.125rem] h-[3.125rem] flex justify-center items-center bg-[var(--bg-color)] hover:bg-[var(--primary-color)] transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://github.com/fahimamim2225" target="_blank" class="w-[3.125rem] h-[3.125rem] flex justify-center items-center bg-[var(--bg-color)] hover:bg-[var(--primary-color)] transition-all"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/fahima-mim-a18b45255/" target="_blank" class="w-[3.125rem] h-[3.125rem] flex justify-center items-center bg-[var(--bg-color)] hover:bg-[var(--primary-color)] transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/dream_mim21/" target="_blank" class="w-[3.125rem] h-[3.125rem] flex justify-center items-center bg-[var(--bg-color)] hover:bg-[var(--primary-color)] transition-all"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+                <div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
+                    <div class="w-full">
+                        <form class="space-y-8">
+                            <div class="flex justify-center items-center gap-4">
+                                <input type='text' placeholder='Enter Name' class="border-2 border-[#ffffff14] w-full px-[0.9375rem] py-[1.25rem] text-white rounded-[0.3125rem] text-base font-bold focus:border-[var(--primary-color)] focus:bg-transparent outline-0 transition-all" />
+                                
+                                <input type='number' placeholder='Phone Number' class="border-2 border-[#ffffff14] w-full px-[0.9375rem] py-[1.25rem] text-white rounded-[0.3125rem] text-base font-bold focus:border-[var(--primary-color)] focus:bg-transparent outline-0 transition-all" />
+                            </div>
+                            <div class="flex justify-center items-center gap-4">
+                                <input type='email' placeholder='Email' class="border-2 border-[#ffffff14] w-full px-[0.9375rem] py-[1.25rem] text-white rounded-[0.3125rem] text-base font-bold focus:border-[var(--primary-color)] focus:bg-transparent outline-0 transition-all" />
+                                
+                                <input type='text' placeholder='Subject' class="border-2 border-[#ffffff14] w-full px-[0.9375rem] py-[1.25rem] text-white rounded-[0.3125rem] text-base font-bold focus:border-[var(--primary-color)] focus:bg-transparent outline-0 transition-all" />
+                            </div>
+                            <div>
+                                <textarea placeholder='Enter Message' rows="6"
+                                class="w-full border-2 border-[#ffffff14] px-[0.9375rem] py-[1.25rem] text-white rounded-[0.3125rem] text-base font-bold focus:border-[var(--primary-color)] focus:bg-transparent outline-0 transition-all"></textarea>
+                            </div>
+                            <a href="#_" class="w-full relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[var(--primary-color)] capitalize transition duration-300 ease-out border-2 border-[var(--primary-color)] rounded-full shadow-md group">
+                                <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[var(--primary-color)] group-hover:translate-x-0 ease">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </span>
+                                <span class="absolute flex items-center justify-center w-full h-full text-[var(--primary-color)] transition-all duration-300 transform group-hover:translate-x-full ease">Send</span>
+                                <span class="relative invisible">Send</span>
+                            </a>
+                        </form>
+                    </div> 
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- contact area end -->
+
+    <!-- footer area start -->
+    <footer class="border-t border-[var(--border-color)] py-[1.5rem] px-[1.875rem] 2xl:px-[0rem]">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="">
+                    <p class="text-[var(--gray-color)] text-xs lg:text-sm font-normal">© 2025 All rights reserved by <a href="#" class="text-[var(--primary-color)]">Fahima Mim</a></p>
+                </div>
+                <div class="">
+                    <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="">
+                    <ul class="flex text-xs lg:text-base justify-end items-center gap-3 capitalize">
+                        <a href="#"><li>terms & conditions</li></a>
+                        <a href="#"><li>privacy policy</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- scrollTop -->
+    <div id="stop" class="scrollTop fixed right-[2%] bottom-[1.875rem] bg-[var(--primary-color)] w-12 h-12 flex justify-center items-center opacity-0 transition-all ease-in-out">
+        <span><a href="" class="text-lg text-white"><i class="fa-solid fa-angle-up"></i></a></span>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

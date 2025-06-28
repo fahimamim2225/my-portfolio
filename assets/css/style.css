@@ -3,7 +3,7 @@
 
 /* Basic Css */
 body{
-    @apply text-white;
+    @apply text-white overflow-hidden;
     background-color: var(--bg-color);
     /* color: var(--secondary-color);
     font-family: var(--font-rubik); */

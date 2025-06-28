@@ -1281,11 +1281,6 @@
       margin-top: 0px;
     }
   }
-  .xl\:h-\[43\.75rem\] {
-    @media (width >= 80rem) {
-      height: 43.75rem;
-    }
-  }
   .xl\:h-\[52\.5rem\] {
     @media (width >= 80rem) {
       height: 52.5rem;
@@ -1396,6 +1391,7 @@
   }
 }
 body {
+  overflow: hidden;
   color: var(--color-white);
   background-color: var(--bg-color);
 }
